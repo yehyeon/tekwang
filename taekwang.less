@@ -1,0 +1,373 @@
+// out:taekwang.css, sourcemap: false, compress:  false
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body {
+  font-family: 'Oswald', sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+img, video{
+  vertical-align: top;
+}
+ul,ol,li{list-style: none;}
+a {
+  text-decoration: none;
+  color: #000;
+}
+input,button {
+  text-indent: -9999px; border: 0;
+}
+@keyframes line1 {
+  50% {width: 13px;}
+  100% {width: 22px;}
+}
+@keyframes line2 {
+  50% {width: 22px;}
+  100% {width: 13px;}
+}
+header{
+  height: 80px;
+  background-color: #000;
+  vertical-align: middle;
+  position: relative;
+
+  text-align: center;
+   .logo{
+     width: 62px;
+     display: inline-block;
+     float: left;
+     margin-left: 31px;
+     img{
+       display: inline-block;
+       vertical-align: middle;
+       margin-top:11px;
+     }
+   }
+   .top_menu{
+     width: 1200px;
+     margin: 0 auto;
+     >li{
+       float: left;
+       width: 190px;
+       padding: 5px 15px;
+       text-align: center;
+       &:hover{
+         >a{
+           color:#008889;
+         >span{width:100%;}
+       }
+        &:hover .sub_menu li{display:block;}
+       }
+       >a{
+         position: relative;
+         text-transform: uppercase;
+         display: block;
+         margin: 20px auto;
+         font-size: 16px;
+         font-weight: bold;
+         color: #fff;
+         span{
+           position: absolute;
+           bottom: 0;left: 0; top:40px;
+           width: 0;height: 3px;
+           background-color: #008889;
+           transition: 1s;
+         }
+       }
+       .menu_spacing{
+         letter-spacing: -2px;
+       }
+       div{
+         border-right: 1px #f0f0f0 solid;
+       }
+       .sub_menu{
+         padding:0;
+         transition: 1s;
+         margin-top:20px;
+         li{
+             height:20px;
+             padding:-50px 0;
+             transition: 1s;
+             display: inline-block;
+             display:none;
+             width: 190px;
+             font-size: 13px;
+             line-height:3px;
+             margin-top: 23px;
+             .po>a{margin-top:50px;}
+           &:first-child{margin-top:65px;}
+           &:hover{display:block;}
+           a{
+             display: block;
+             text-transform: uppercase;
+             &:hover{
+               color:#008889;
+             }
+           }
+         }
+       }
+
+     }
+   }
+
+    .top_right {
+      position: absolute;
+      top: 22px;
+      right: 10px;
+      width: 135px;
+      height: 35px;
+    }
+    .top_right .home {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 35px;
+      background-image: url(../images/teakwang/home-ico.png);
+      background-repeat: no-repeat;
+      background-position:10px 10px;
+      background-color: #333;
+      cursor: pointer;
+    }
+    .top_right .home:hover {
+      background-color: #555;}
+      .top_right .sel-lang {
+        width: 45px;
+        height: 35px;
+        position: absolute;
+        top: 0;
+        left: 40px;
+        background-color: #086c6d;
+        cursor: pointer;
+        line-height: 35px;
+      }
+      .top_right .sel-lang a {
+        width: 45px;
+        height: 35px;
+        display: block;
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+      }
+      .top_right .sel-lang a:hover {
+        background-color: #199394;
+      }
+      .top_right .cate {
+       position: absolute;
+       top: 0;
+       right: 0;
+       width: 40px;
+       height: 100%;
+       cursor: pointer;
+     }
+     .top_right .cate:hover .line1 {
+       animation: line1 2s infinite;
+     }
+     .top_right .cate:hover .line2 {
+       animation: line2 2s infinite;
+     }
+     .top_right .cate:hover .line3 {
+      animation: line1 2s infinite;
+    }
+    .top_right .cate span {
+      display: block;
+      height: 2px;
+      background-color: #fff;
+    }
+    .top_right .cate span:first-child {
+      font-size: 0;
+      visibility: hidden;
+    }
+    .top_right .cate .line1 {
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      width: 22px;
+    }
+    .top_right .cate .line2 {
+      position: absolute;
+      top: 17px;
+      right: 10px;
+      width: 13px;
+    }
+    .top_right .cate .line3 {
+      position: absolute;
+      top: 25px;
+      right: 10px;
+      width: 22px;
+    }
+}
+
+article {
+    .tae {
+    position: absolute;
+    width: 469px;
+    height: 132px;
+    margin-left:684px;
+    margin-top:-600px;
+    border:3px #ccc solid;
+    vertical-align: middle;
+    img{width:100%;  vertical-align: middle;
+   }
+    }
+        }
+
+content{
+    height:500px;
+    li{
+        width:25%;
+        outline:2px #FF4500 solid;
+        float:left;
+        overflow:hidden;
+        transition:1s; position: relative;
+
+    }
+    li img{width:100%; vertical-align:top;
+        transition:1s cubic-bezier(0, 1.46, 1, -0.49);}
+    li:hover img{
+        transform:scale(1.5,1.5) rotate(15deg);}
+    li .txt{
+            position:absolute;
+            left:0;
+            top:0;
+            z-index:10;
+            color:#FFF;
+            font-size:20px;
+            top:50%;
+            line-height:20px;
+            margin-top:-10px; /*50프로면 50프로 밑이니까 위로 올려주려고*/
+            width:100%;
+            text-align:center;
+            }
+    li .txt .와꾸{
+        display:inline-block;
+        border:1px #F00 solid;
+        padding:10px 20px;
+        position:relative;
+    }
+    li .txt .와꾸 .line1{
+        position:absolute;
+        height:4px;
+        background-color:#FFF;
+        width:0%;
+        top:0;
+        left:0;
+        transition:0.5s;
+    }
+    li:hover .와꾸 .line1{
+        width:100%;
+    }
+    li .txt .와꾸 .line2{
+        position:absolute;
+        height:0;
+        background-color:#FFF;
+        width:4px;
+        top:0;
+        right:0;
+        transition:0.5s;
+        transition-delay:0.5s;
+    }
+    li:hover .와꾸 .line2{
+        height:100%;
+    }
+    li .txt .와꾸 .line3{
+        position:absolute;
+        height:4px;
+        background-color:#FFF;
+        width:0;
+        bottom:0;
+        right:0;
+        transition:0.5s;
+        transition-delay:1s;
+    }
+    li:hover .와꾸 .line3{
+        width:100%;
+    }
+    li .txt .와꾸 .line4{
+        position:absolute;
+        height:0;
+        background-color:#FFF;
+        width:4px;
+        bottom:0;
+        left:0;
+        transition:0.5s;
+        transition-delay:1.5s;
+    }
+    li:hover .와꾸 .line4{
+        height:100%;
+    }
+    @media screen and (max-width:480px) {
+        .grid li{
+            float:none;
+            width:auto;
+        }
+           }
+           }
+
+.map{margin-top:0;}
+.map img{width:110%}
+.soc_sec{
+  div{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    img{
+      width: 100%;
+      transition: 1s;
+    }
+    >span{
+      display: block;
+      position: absolute;
+      color:#fff;
+      text-transform: uppercase;
+      font-size: 25px;
+      line-height: 25px;
+    }
+    span.social-01{
+      padding-top: 20px;
+      top: 191px;left: 50%;
+      margin-left: -105px;
+    }
+    span.social-02{
+      top: 260px;left: 50%;
+      margin-left: -60px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    span.social-03{
+      padding-top: 20px;
+      top: 191px;left: 50%;
+      margin-left: -177.64px;
+    }
+    span.line{
+      position: absolute;
+      width: 20px;height: 3px;
+      top: 0;left: 50%;
+      margin-left: -10px;
+      background-color: #fff;
+      transition: 0.2s;
+      transform-origin: center;
+    }
+    &:after{
+      content:"";
+      position: absolute;
+      top: 0;left: 0;right: 0;bottom: 0;
+      background-color: rgba(0,131,132,0.5);
+      opacity: 0;
+      transition: 1s;
+    }
+    &:hover{
+      img{
+        transform: scale(1.1);
+      }
+      span.line{
+        width: 0;
+      }
+      &:after{
+        opacity: 1;
+      }
+    }
+  }
+}
