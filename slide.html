@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    *{margin: 0;padding: 0;}
+    ul, ol, li{list-style: none;}
+    cite{font-style: normal;}
+    body, html{height: 100%;}
+    .slide{background: url(http://www.tkgroup.co.kr/kor/_Img/Content/portfolio_bg.png) no-repeat center;
+    width: 100%;
+    height: 850px;
+    position: relative;
+    text-align: center;}
+    .slide li{text-align: center; display: inline-block;}
+    .slide li>a{display: inline-block; border: 2px #fff solid; width: 9px;height: 9px;
+    margin: 0 10px; border-radius: 50%; position: relative; top: 715px;}
+    .slide li>div{position: absolute;left: 0;top: 0;width: 100%;height: 100%;text-align: center;display: none;}
+    .slide li.on div{display: block;}
+    .slide li cite,
+    .slide li span{display: block;position: relative;top:134px;}
+    .slide li img{position: relative;top: 100px;}
+    .slide .btngroup{height: 100%;}
+    .slide button{display: block; width: 90px; height: 100%; position: absolute;
+    cursor: pointer; transition: 1s;}
+    .slide .next{ background: url(http://www.tkgroup.co.kr/kor/_Img/Content/portfolio_next.png) no-repeat 10px center;
+     right: 0;top: 0;}
+    .slide .next:hover{
+       background-position: 20px center;}
+    .slide .prev{background: url(http://www.tkgroup.co.kr/kor/_Img/Content/portfolio_prev.png) no-repeat 40px center;
+    left: 0;top: 0;}
+    .slide .prev:hover{
+      background-position: 30px center;}
+    .contents_wrap{
+    position: absolute; top: 0;right: 0;left: 0;bottom: 0;
+    padding-top: 140px; display: none;}
+    .contents{
+    margin: 0 auto; width: 1100px;}
+    .s a{
+      display: inline-block;
+      border: 2px #fff solid;
+      width: 9px;height: 9px;
+      margin: 0 10px;
+      border-radius: 50%;
+      position: relative;
+      top: 715px;}
+   .on a{background: #fff;}
+    li.on .contents_wrap{
+      display: block;}
+   cite{
+     font-size:52px;
+     line-height: 1;
+     margin-top: 45px;
+     font-weight: bold;
+     font-style: normal;
+     color:#fff;
+     display: block;
+    }
+  span{
+     font-size: 16px;
+     line-height: 1;
+     margin-top: 20px;
+     color: #fff;
+     display: block;
+    }
+    footer .lnb {
+      background-color: #191919;
+      font-size: 13px;
+      line-height: 13px;
+      text-align: center;
+      overflow: hidden;
+      padding: 22px 30px;
+    }
+    footer .lnb div {
+      width: 50%;
+      float: left;
+    }
+    footer .lnb div a {
+      display: inline-block;
+      vertical-align: middle;
+      color: #e8e8e8;
+      text-decoration:none;
+    }
+    footer .lnb div a:hover {text-decoration:underline;}
+    footer .lnb div a:after {
+      content: "";
+      background-image: url(../images/teakwang/more.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      width: 5px;
+      height: 8px;
+      margin-left: 27px;
+    }
+
+    footer .lnb div a.ico01:before {
+      content: "";
+      background-image: url(http://www.tkgroup.co.kr/_Template/Footer/tkgroup-kr/_Img/ftoplink_ico01.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      width: 26px;
+      height: 26px;
+      margin-right: 14px;
+    }
+    footer .lnb div a.ico02:before {
+      content: "";
+      background-image: url(http://www.tkgroup.co.kr/_Template/Footer/tkgroup-kr/_Img/ftoplink_ico02.png);
+      background-repeat: no-repeat;
+      display: inline-block;
+      vertical-align: middle;
+      width: 26px;
+      height: 26px;
+      margin-right: 14px;
+    }
+    footer .last {
+      font-family: 'Malgun Gothic', sans-serif;
+      background-color: #080808;
+      text-align: center;
+      padding: 84px 0;
+    }
+    footer .last .logo {
+      margin-bottom: 34px;
+    }
+    footer .last .address span {
+      display: inline-block;
+      font-size: 13px;
+      line-height: 13px;
+      margin-left: 18px;
+      color: #b5b5b5;
+    }
+    footer .last .address span:first-child {
+      margin-left: 0;
+    }
+    footer .last .address p {
+      font-size: 10px;
+      color: #535353;
+      margin-top: 10px;
+    }
+
+
+
+
+  </style>
+  <title>Slide</title>
+</head>
+<body>
+  <div class="slide">
+    <ul class="s">    <!-- ul>li*5>img+cite{text}+span -->
+      <li class="on">
+        <a href="" class="active"></a>
+        <div>
+          <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio01.png" alt="">
+          <cite>NIKE LUNAREPIC FK</cite>
+          <span>RUNNING</span>
+        </div>
+      </li>
+      <li>
+        <a href=""></a>
+        <div>
+          <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio02.png" alt="">
+          <cite>text</cite>
+          <span></span>
+        </div>
+      </li>
+      <li>
+        <a href=""></a>
+        <div>
+          <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio03.png" alt="">
+          <cite>text</cite>
+          <span></span>
+        </div>
+      </li>
+      <li>
+        <a href=""></a>
+        <div>
+          <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio04.png" alt="">
+          <cite>text</cite>
+          <span></span>
+        </div>
+      </li>
+      <li>
+        <a href=""></a>
+        <div>
+          <img src="http://www.tkgroup.co.kr/kor/_Img/Content/portfolio05.png" alt="">
+          <cite>text</cite>
+          <span></span>
+        </div>
+      </li>
+    </ul>
+    <div class="btngroup">   <!-- button{text}*2 -->
+      <button class="next"></button>
+      <button class="prev"></button>
+    </div>
+  </div>
+  <footer>
+    <div class="lnb">
+      <div>
+        <a href="" class="ico01">개인정보처리방침</a>
+      </div>
+      <div>
+        <a href="" class="ico02">지속가능보고서 다운로드</a>
+      </div>
+    </div>
+    <div class="last">
+      <div class="logo">
+        <img src="http://www.tkgroup.co.kr/kor/_Img/f-logo.png" alt="">
+      </div>
+      <div class="address">
+        <span>태광실업(주)</span>
+        <span>경상남도 김해시 김해대로 2635번길 26(안동)</span>
+        <span>TEL : 055&ndash;333&ndash;7151</span>
+        <span>FAX : 055&ndash;336&ndash;4917</span>
+        <p>Copyright (C) 2016 Taekwang. co., ltd All rights reserved.</p>
+      </div>
+    </div>
+ </footer>
+</div>
+</body>
+</html>
+
+
+
+</body>
+</html>
